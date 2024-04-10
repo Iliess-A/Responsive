@@ -1,0 +1,76 @@
+@media only screen and (max-width:480px){
+    
+    body{
+        background-color: red;
+    }
+    #medium,#large{
+        display: none;
+    }
+    #small{
+        font-size: small;
+
+        
+    }
+
+    div{
+        display: block;
+    }
+    
+
+}
+
+@media screen and (min-width:480px) and (max-width:1024px){
+    
+    body{
+        background-color: green;
+    }
+    #small,#large{
+        display: none;
+    }
+
+    #medium{
+        font-size: medium;
+       
+        
+    }
+
+    div{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: center;
+    }
+    div :nth-child(1){
+        width: (100%/3)*1; 
+    }
+    div :nth-child(2){
+        width: (100%/3)*2; 
+    }
+    div :nth-child(3){
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:1024px){
+    
+    body{
+        background-color: blue;
+    }
+    #small,#medium{
+        display: none;
+    }
+
+    #large{
+        font-size: large;
+        
+    }
+
+    div{
+
+        display: flex;
+        flex-direction: row;
+
+    }
+
+}
